@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* Egenskapen box-sizinglar oss inkludere polstring og kant i et elements totale bredde og høyde. */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-transform: capitalize; */
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #2e6b68;
+    /* Box shadow vil si skyggen som kommer rundt borderen din som du har satt opp. */
+    box-shadow: 0 5px 10px rgba(0,0,0.0);
+    padding: 0px 7%;
+    /* Display flex passer på at de områdene som er ledige eller har mye plass, blir brukt opp eller at den prøver å bruke de opp. */
+    display: flex;
+    /* Align items center gjør at alt sammen havner på centeret av skjermen og justify content gir et passe mellomrom medllom innholdet.*/
+    align-items: center;
+    justify-content: space-between;
+    /* z-index blir brukt til å putte innhold over annet, basicly hvis du gir et innhold en høyrere z-index enn en annen, så vil den med det høye numeret havne øverst. */
+    z-index: 1000;
+}
+
+header .logo{
+    /* Dette er bare for dekorasjon av teksten */
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(51, 51, 51);
+}
+
+/* Denne koden gjør at det ikke blir som en liste, så alle punkter blir fjerna */
+header .navbar ul{
+list-style: none;
+}
+
+header .navbar ul li{
+    /*  Denne passer på at innholdet holder seg som cirka hvor det hører hjemme og at for min del at det er på venstre side. */
+    position: relative;
+    float: left;
+
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 13px;
+    color: rgb(0, 0, 0);
+    /* Display block gjør at innholdet blir sett på som en block eller border og border radius er om du vil gjøre en firkant mer om til en sirkel/oval */
+    display: block;
+    border-radius: 25px;
+}
+
+header .navbar ul li a:hover{
+    /* Denne koden til gjøre at når du tar musen over en av listene, så vil du få at den hoverer over, og da vil det komme den bakgrunnfargen man har valgt. */
+    background: rgb(51, 51, 51);
+    color: rgb(46, 107, 104);
+}
+
+header .navbar ul li ul{
+    /* Denne koden gjorde at de to listene, fikk nokk plass til å komme ved siden av hverandre ved hjelp av width, og at den får riktig bakgrunssfarge. Position absolut gjør også
+    at de to listene, holder seg i nærheten av den ul-en de hører til. Display none gjør også at du ikke vil se den listen, hvis ikke du hoverer over den. */
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: rgb(46, 107, 104);
+    border-radius: 20%;
+    display: none;
+}
+
+
+header .navbar ul li ul li{
+    width: 80%;
+/* Border gjør at du kan velge hvor du vil ha en linje, også kan du velge hvor tjukk du vil ha den linjen, som jeg har gjort med 1px, og velge farge. */
+    border-top: 1px solid rgba(0,0,0.1);
+}
+
+header .navbar ul li:hover  ul{
+    /* Denne koden gjør at når du hoverer over den listen som denne cssen er linka til, så vil du få opp de andre listene, som er linka til denne listen. */
+    display: initial;
+}
+
+footer{
+    background-color: #333;
+    padding: 100px 0 35px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 35px;
+    /* position absolute kan bli brukt til å kunne gjøre seg selv på enn måte usynlig, hvor andre innleg vil havne under den istedenfor ved siden av den. */
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+
+}
+
+footer .row{
+    width: 85%;
+    /* Margin auto blir brukt til å kunne midstille innleg horisontalt. */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* Align items flex start gjør at alle objektene blir plasser mot starten av kross axen og flex wrap gjør at objekter kan havne på en linje eller flere. */
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .row .col{
+    flex-basis: 25%;
+    padding-right: 4%;
+}
+
+footer .row .col p{
+    font-size: 14px;
+}
+
+footer .row .col .logo{
+    color: #fff;
+    /* Text transform passer på at den første bokstaven alltid blir stor  */
+    text-transform: initial;
+    display: block;
+    margin-bottom: 40px;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+footer .row .col .logo p{
+    text-transform: initial;
+}
+
+
+
+/* Når jeg skriver h3, så vil det si at alle innenfor klassen som bruker h3, vil få disse css kodingene. */
+footer .row .col h3{
+    font-size: 1.2em;
+    position: relative;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+
+footer .row .col h3::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 30px;
+    height: 8px;
+    background: #c7bdbd;
+}
+
+footer .row .col li{
+    /* Disse kodene gjør at du får ingen punker forran teksten, og den bestemmer hvor stor margin boksen er, altså boksen som all teksten er i */
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+footer .row .col li a{
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    color: #fff;
+    /* Transition bestemer hvor fort animasjonen skal være når du hoverer over med datamusen over det ordet eller objektet */
+    transition: 1.5s;
+}
+
+footer .row .col li a:hover{
+    /*  color i denne koden bestemmer hvilken farge teksten blir til når man hoverer over den */
+    color: #c7bdbd;
+    padding-left: 2px;
+}
+
+footer .row .col:nth-child(3) p{
+    margin-bottom: 12px;
+    /* text-transform: capitalize; */
+}
+
+footer .row .col i{
+    /* Med de tre komandoene under, så bestemmer jeg hvor stor margen skal være, og hvor stor iconene skal være */
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    /* Line-height blir brukt til å putte høyden i en margin eller linjeboks  */
+    line-height: 40px;
+    /* border radius gjør at du kan lage hjørner litt mindre skarpt */
+    border-radius: 5px;
+    /* Margin left blir brukt til å sette hvor marginen skal være til venstre for et objekt eller ord. */
+    margin-left: 8px;
+    /* Cursor pointer gjør at når du tar musepekeren over objektet, så vil datamusen endre seg til en klikke knapp */
+    cursor: pointer;
+    /* border solid gir deg en ramme som er fin og rett, rundt det objektet du har valgt. */
+    border: 2px solid #c7bdbd;
+    background-color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    transition: 1s;
+}
+
+footer .row .col i:hover{
+    background: #181616;
+    
+}
+
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    /* Cursor pointer gjør at musen vil endre seg når den er over et bestemt objekt. */
+    cursor: pointer;
+}
+
+nav ul li {
+    /* Display inline block gjør at du plasserer lister horisontalt enn vertikalt. list style bestemmer hvilken måte innholdet skal listes. */
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}

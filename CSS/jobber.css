@@ -1,0 +1,105 @@
+body{
+    /* Denne koden gjør at bakgrunnen vil bli en gradient, som vil si at den vil sakte overføre mellom valgte farger. Font family gjør at du bestemmer hvordan fonten teksten skal ha */
+    background-image: linear-gradient(to bottom, rgb(39, 105, 131), rgb(51, 51, 51));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.ramme{
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 30px;
+    padding:100px; margin:30px;
+    background-color: #2e6b68;
+    border: 5px solid;
+    border-radius: 10%;
+    margin-top: 170px;
+    line-height: 40px;
+    }
+
+    
+
+    .ramme .img-kunn{
+        margin-top: 70px;
+    }
+
+
+    .ramme-2{
+        text-align: center;
+        margin-left: 10%;
+        padding:100px; margin:30px;
+        background-color: #2e6b68;
+        border-radius: 10%;
+        margin-top: 170px;
+        line-height: 40px;
+        float: left;
+        border: 5px solid;
+        }
+
+   .ramme-3{
+        text-align: center;
+        margin-left: 10%;
+        padding:100px; margin:30px;
+        background-color: #2e6b68;
+        border-radius: 10%;
+        margin-top: 170px;
+        line-height: 40px;
+        float: left;
+        border: 5px solid;
+        }
+
+        .ramme-4{
+            text-align: center;
+            margin-left: 10%;
+            padding:100px; margin:30px;
+            background-color: #2e6b68;
+            border-radius: 10%;
+            margin-top: 170px;
+            line-height: 40px;
+            float: left;
+            margin-bottom: 500px;
+            border: 5px solid;
+            }
+
+            .ramme-4 .img-kunn{
+                margin-top: 150px;
+            }
+
+            .ramme-5{
+                text-align: center;
+                margin-left: 10%;
+                padding:100px; margin: 30px;
+                background-color: #2e6b68;
+                border-radius: 10%;
+                line-height: 40px;
+                margin-top: -300px;
+                float: left;
+                margin-bottom: 90px;
+                border: 5px solid;
+                }
+
+    .img-kunn{
+        padding-left: 0%;
+        float: right;
+        margin-right: 1%;
+        margin-top: 90px;
+        border-radius: 20%;
+        border: 5px solid;
+      }
+
+.textkunn{
+    /* Dette vil på en måte betyr hvor langt unna innholdet ditt skal være for margen som er til høyre */
+    margin-right: 50%;
+}
+
+      .textkunn h1{
+        float: left;
+      }
+
+      .textkunn h3{
+float: left;
+      }
+    
+      
+
+      

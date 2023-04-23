@@ -1,0 +1,54 @@
+body{
+    background-color: #333;
+}
+
+
+
+.border{
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 30px;
+    /* Margin er på en måte hvor stor den borderen skal være i bredden. */
+    padding:100px;  margin:30px;
+    background-color: #ffffff;
+    border: 5px solid;
+    border-radius: 10%;
+    margin-top: 170px;
+    line-height: 40px;
+    margin-bottom: 80px;
+    }
+
+    .border .img-kunn{
+        margin-top: -0px;
+    }
+
+    .img-kunn{
+        padding-left: 0%;
+        float: right;
+        margin-right: 1%;
+        position: relative;top: 180px;
+        border-radius: 5%;
+        border: 5px solid;
+      }
+
+      .img-kunn-hjemme{
+        padding-left: 0%;
+        float: right;
+        margin-right: 1%;
+        position: relative;top: 110px;
+        border-radius: 10%;
+        border: 5px solid;
+      }
+
+.textkunn{
+    margin-right: 50%;
+}
+
+      .textkunn h1{
+        float: left;
+        font-size: 50px;
+      }
+
+      .textkunn h3{
+float: left;
+      }
